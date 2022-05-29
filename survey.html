@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <meta charset="utf-8">
+    <link href="./style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name<input id="name" type="text" placeholder="Enter your name" required/>
+        </label>   
+                <label id="email-label">Email<input id="email" type="email" placeholder="Enter your email" required/>
+        </label>
+                <label id="number-label">Age(optional)
+           <input id="number" type="number" min="1" max="120" placeholder="Enter your age" required/>
+        </label>     
+      </fieldset>
+      <fieldset>
+    
+      </fieldset>
+      <fieldset>
+        <label>Which option best describes your current role?
+          <select id="dropdown">
+            <option >Select current role</option>
+            <option >Student</option>
+            <option>Full Time Job</option>
+            <option>Part Time Job</option>
+            <option>Prefer not to say</option>
+            <option>Other</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>
+          <input type="radio" name="one" value="radio1"/>Definitely
+        <label>
+        <label>
+          <input type="radio" name="one" value="radio2"/>Maybe
+        </label>
+        <label>
+          <input type="radio" name="one" value="radio2"/>Not sure
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>Which option best describes your current role?
+           <select id="dropdown">
+             <option >Select an option</option>
+             <option >Challenges</option>
+             <option>Projects</option>
+             <option>Community</option>
+             <option>Opensource</option>
+           </select>
+        </label>
+        </fieldset>
+        <fieldset>
+          <label>Which option best describes your current role?
+             <input type="checkbox" value="one"/>Back-end Projects
+             <input type="checkbox" value="two"/>Data Visualization
+             <input type="checkbox" value="three"/>Challenges
+             <input type="checkbox" value="four"/>Open Source Community
+             <input type="checkbox" value="five"/>Gitter help rooms
+             <input type="checkbox" value="six"/>Videos
+             <input type="checkbox" value="seven"/>City Meetups
+             <input type="checkbox" value="eight"/>Wiki
+             <input type="checkbox" value="nine"/>Forum
+             <input type="checkbox" value="ten"/>Additional Courses
+          </label>
+        </fieldset>
+        <fieldset>
+          <label id="textarea-label">Any comments or suggestions?<textarea row="4" cols="10" placeholder="Enter your comments here...."/></textarea></label>
+        </fieldset>
+        <input type="submit" id="submit" value="Submit" />
+    </form>
+  </body>
+</html>
